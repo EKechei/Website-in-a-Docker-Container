@@ -18,6 +18,6 @@ COPY ./website /website
 COPY ./website.conf /etc/nginx/nginx.conf
 ```
 
-The ``` FROM nginx ``` line tells Docker to create a Docker image based on the Nginx web server.
+The ``` FROM nginx ``` line tells Docker to create a Docker image based on the Nginx web server. The ```LABEL maintainer```  adds metadata to your Docker image, specifically the maintainer information. It indicates who is responsible for maintaining the image. ``` COPY ./website /website ``` This line copies the contents of the local *website* directory   into the */website* directory inside the Docker image. This makes the files in the website directory available within the container. The ``` COPY ./website.conf /etc/nginx/nginx.conf ``` copies the *website.conf* file from your local machine to the */etc/nginx/nginx.conf* path inside the Docker image.
 
 
