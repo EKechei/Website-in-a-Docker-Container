@@ -1,4 +1,4 @@
-# Website-as-Docker-Container
+# Website in a Docker Container
 
 ![image](https://github.com/user-attachments/assets/4c444f26-74be-40bb-a785-ed746b81fae0)
 
