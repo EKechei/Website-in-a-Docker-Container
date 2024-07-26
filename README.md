@@ -27,5 +27,29 @@ The ``` FROM nginx ``` line tells Docker to create a Docker image based on the N
 # Step 2: Build the Docker Image
 To build the image, run ``` docker build -t my-website .``` . The ``` docker build``` command tells docker to build the website as an image based on the instructions provided in a Dockerfile. The ```-t my-website ``` tells docker to tag the image my-website. The period (.) tells Docker to look for the Dockerfile in the current directory and use the files and directories in this location during the build process.
 
+![image](https://github.com/user-attachments/assets/2b20b450-ce3d-4ed3-bc2c-2c100949d430)
+
+# Step 3: Run the Docker Container 
+This step starts the Docker container for the website using the previously built Docker image.
+Use this command to run the container: ``` docker run --rm --name my-website-container -p 8080:80 my-website ```
+
+# Step 4: Test
+Open your web browser and go to **http://localhost:8080**
+
+![image](https://github.com/user-attachments/assets/5e56f8cd-52bf-4eb1-895c-fbd40f97e0dd)
+
+As you can see, my website is up and docker is working successfully.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
